@@ -37,8 +37,8 @@ from sklearn.metrics import f1_score
 #Other sources: Gis - Exchange (2021)
 #Create geodataframe from the points
 
-pointfile = '/content/gdrive/MyDrive/data/labelled_shp/gbin.shp'
-s2folder = r'/content/gdrive/MyDrive/data/sentinel/input_data/'
+pointfile = '../groundtruth_data/gbin.shp'
+s2folder = r'../input_data/'
 df = gpd.read_file(pointfile)
 
 #Iterate through each band-file, exctract the data-points, merge dataframe with points and input images into one dataframe

@@ -10,8 +10,6 @@
 #PyShark (2023): Calinski-Harabasz Index for K-Means Clustering Evaluation using Python (https://pyshark.com/calinski-harabasz-index-for-k-means-clustering-evaluation-using-python/)
 #Yellowbrick (2019): Elbow Method (https://www.scikit-yb.org/en/latest/api/cluster/elbow.html)
 
-from google.colab import files
-from google.colab import drive
 import os
 from sklearn import cluster
 from sklearn.cluster import KMeans
@@ -25,8 +23,9 @@ from sklearn.metrics import calinski_harabasz_score
 
 #PREPROCESSING
 #folder to training input files and predictions input files 
-file_path = '/content/gdrive/MyDrive/data/sentinel/input_data/'
-file_path_pred = '/content/gdrive/MyDrive/data/sentinel/clipped/'
+file_path = '../input_data/'
+#this is the folder for the prediction files - they need to be added
+file_path_pred = '/input_data/'
 
 #Other source: Iyer, N.(2021)
 #stack bands
